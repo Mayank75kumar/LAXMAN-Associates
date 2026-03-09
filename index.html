@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laxman Associates - Premium Manpower Solutions</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+        
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        
+        :root {
+            --primary: #0047AB;
+            --accent: #FFD700;
+        }
+
+        .bg-primary { background-color: var(--primary); }
+        .text-primary { color: var(--primary); }
+        
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(0, 71, 171, 0.1);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #0047AB 0%, #002D62 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation Menu -->
+    <nav class="glass-nav sticky top-0 z-50 border-b border-slate-100">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-primary p-2 rounded-xl text-white">
+                    <i data-lucide="shield-check" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tighter block leading-none text-slate-800">LAXMAN</span>
+                    <span class="text-xs font-bold text-primary tracking-widest uppercase">Associates</span>
+                </div>
+            </div>
+            
+            <div class="hidden lg:flex space-x-8 font-semibold text-slate-600">
+                <a href="#home" class="hover:text-primary transition">Home</a>
+                <a href="#about" class="hover:text-primary transition">About</a>
+                <a href="#services" class="hover:text-primary transition">Services</a>
+                <a href="#process" class="hover:text-primary transition">How it Works</a>
+                <a href="#contact" class="hover:text-primary transition">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/919876543210" target="_blank" class="hidden sm:flex bg-green-500 text-white px-6 py-2.5 rounded-full font-bold items-center gap-2 hover:bg-green-600 transition shadow-lg shadow-green-200">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i> Chat Now
+                </a>
+                <button class="lg:hidden text-slate-800" onclick="toggleMobileMenu()"><i data-lucide="menu"></i></button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-slate-100 p-6 space-y-4">
+            <a href="#home" class="block font-bold text-slate-700" onclick="toggleMobileMenu()">Home</a>
+            <a href="#about" class="block font-bold text-slate-700" onclick="toggleMobileMenu()">About</a>
+            <a href="#services" class="block font-bold text-slate-700" onclick="toggleMobileMenu()">Services</a>
+            <a href="#process" class="block font-bold text-slate-700" onclick="toggleMobileMenu()">How it Works</a>
+            <a href="#contact" class="block font-bold text-slate-700" onclick="toggleMobileMenu()">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-gradient text-white py-24 relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl">
+                <span class="bg-blue-500/30 text-blue-100 px-4 py-1 rounded-full text-sm font-bold mb-6 inline-block uppercase tracking-wider">Quality Staffing Solutions</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-8 leading-[1.1]">Trusted Manpower & <br><span class="text-blue-400">Services Supply</span></h1>
+                <p class="text-xl text-blue-100 mb-10 leading-relaxed">Hum Laxman Associates mein aapke business aur ghar ke liye expert workers provide karte hain. Bharosa hamari pehchan hai.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#services" class="bg-white text-primary px-10 py-4 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all text-center">See All Services</a>
+                    <a href="#contact" class="border-2 border-white/30 backdrop-blur-sm text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-white hover:text-primary transition-all text-center">Get Free Quote</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl"></div>
+    </header>
+
+    <!-- Why Choose Us / About -->
+    <section id="about" class="py-24 container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-blue-600 rounded-3xl p-8 text-white mt-8">
+                    <i data-lucide="award" class="w-12 h-12 mb-4"></i>
+                    <h4 class="text-xl font-bold mb-2">Verified Workers</h4>
+                    <p class="text-blue-100 text-sm">Har worker ka background check hota hai.</p>
+                </div>
+                <div class="bg-white shadow-xl shadow-slate-200 rounded-3xl p-8 border border-slate-100">
+                    <i data-lucide="clock" class="w-12 h-12 mb-4 text-primary"></i>
+                    <h4 class="text-xl font-bold mb-2 text-slate-800">24/7 Service</h4>
+                    <p class="text-slate-500 text-sm">Emergency services hamesha uplabdh hain.</p>
+                </div>
+                <div class="bg-white shadow-xl shadow-slate-200 rounded-3xl p-8 border border-slate-100">
+                    <i data-lucide="trending-up" class="w-12 h-12 mb-4 text-primary"></i>
+                    <h4 class="text-xl font-bold mb-2 text-slate-800">Affordable Rates</h4>
+                    <p class="text-slate-500 text-sm">Market se behtar aur sasta rate.</p>
+                </div>
+                <div class="bg-primary rounded-3xl p-8 text-white -mt-8">
+                    <i data-lucide="smile" class="w-12 h-12 mb-4"></i>
+                    <h4 class="text-xl font-bold mb-2 text-blue-100">Happy Clients</h4>
+                    <p class="text-blue-100 text-sm">500+ satisfied customers ka bharosa.</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-4xl font-extrabold text-slate-800 mb-6 leading-tight">Hamari Company Ka Lakshya</h2>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">Laxman Associates sirf manpower supply nahi karta, balki hum ek rishta banate hain. Hum samajhte hain ki ek accha worker aapke business ki raftar badal sakta hai.</p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 bg-white p-4 rounded-xl border-l-4 border-primary">
+                        <i data-lucide="check" class="text-primary font-bold"></i>
+                        <span class="font-bold">Proper Document Verification</span>
+                    </div>
+                    <div class="flex items-center gap-4 bg-white p-4 rounded-xl border-l-4 border-primary">
+                        <i data-lucide="check" class="text-primary font-bold"></i>
+                        <span class="font-bold">Skilled & Trained Professionals</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-slate-100 py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-4xl font-extrabold text-slate-800 mb-4">Our Premium Services</h2>
+                <p class="text-slate-600">Aapki har zaroorat ke liye hamare paas expert team taiyaar hai.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="service-card bg-white rounded-3xl p-8 border border-slate-200">
+                    <div class="w-14 h-14 bg-blue-50 text-primary rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Manpower Supply</h3>
+                    <ul class="text-sm text-slate-500 space-y-2 mb-8">
+                        <li>• Factory Workers</li>
+                        <li>• Security Guards</li>
+                        <li>• Delivery Boys</li>
+                    </ul>
+                    <button onclick="openEnquiry('Manpower Supply')" class="w-full py-3 rounded-xl bg-slate-50 text-primary font-bold hover:bg-primary hover:text-white transition-colors">Book Now</button>
+                </div>
+
+                <div class="service-card bg-white rounded-3xl p-8 border border-slate-200">
+                    <div class="w-14 h-14 bg-blue-50 text-primary rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Housekeeping</h3>
+                    <ul class="text-sm text-slate-500 space-y-2 mb-8">
+                        <li>• Deep Cleaning</li>
+                        <li>• Office Cleaning</li>
+                        <li>• Sanitation Work</li>
+                    </ul>
+                    <button onclick="openEnquiry('Housekeeping')" class="w-full py-3 rounded-xl bg-slate-50 text-primary font-bold hover:bg-primary hover:text-white transition-colors">Book Now</button>
+                </div>
+
+                <div class="service-card bg-white rounded-3xl p-8 border border-slate-200">
+                    <div class="w-14 h-14 bg-blue-50 text-primary rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="wrench"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Labour Supply</h3>
+                    <ul class="text-sm text-slate-500 space-y-2 mb-8">
+                        <li>• Construction Labour</li>
+                        <li>• Loading/Unloading</li>
+                        <li>• Electricians</li>
+                    </ul>
+                    <button onclick="openEnquiry('Labour Supply')" class="w-full py-3 rounded-xl bg-slate-50 text-primary font-bold hover:bg-primary hover:text-white transition-colors">Book Now</button>
+                </div>
+
+                <div class="service-card bg-white rounded-3xl p-8 border border-slate-200">
+                    <div class="w-14 h-14 bg-blue-50 text-primary rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="monitor"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Computer Work</h3>
+                    <ul class="text-sm text-slate-500 space-y-2 mb-8">
+                        <li>• Data Entry</li>
+                        <li>• Back Office</li>
+                        <li>• IT Support</li>
+                    </ul>
+                    <button onclick="openEnquiry('Computer Work')" class="w-full py-3 rounded-xl bg-slate-50 text-primary font-bold hover:bg-primary hover:text-white transition-colors">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="process" class="py-24 container mx-auto px-6">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl font-extrabold text-slate-800 mb-4">Humein Kaam Kaise Milta Hai?</h2>
+            <p class="text-slate-600">Bas 3 easy steps mein aapka kaam poora ho jayega.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-12 text-center">
+            <div>
+                <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl font-bold text-xl">1</div>
+                <h4 class="text-xl font-bold mb-3">Inquiry</h4>
+                <p class="text-slate-500">Humein call karein ya WhatsApp karein aur apni zaroorat bataiye.</p>
+            </div>
+            <div>
+                <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl font-bold text-xl">2</div>
+                <h4 class="text-xl font-bold mb-3">Planning</h4>
+                <p class="text-slate-500">Hum aapke liye best suited workers select karte hain.</p>
+            </div>
+            <div>
+                <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl font-bold text-xl">3</div>
+                <h4 class="text-xl font-bold mb-3">Deployment</h4>
+                <p class="text-slate-500">Worker aapki location par pahunch kar kaam shuru karta hai.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-slate-50 rounded-[2.5rem] shadow-xl overflow-hidden flex flex-col md:flex-row">
+                <div class="md:w-1/3 bg-primary p-12 text-white">
+                    <h3 class="text-2xl font-bold mb-6">Direct Connect</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                            <span>+91 98765 43210</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            <span>New Delhi, India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 p-12">
+                    <form id="waForm" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <input type="text" id="name" placeholder="Apna Naam" required class="w-full p-4 rounded-xl border border-slate-200 outline-none focus:border-primary">
+                            <input type="tel" id="phone" placeholder="Mobile Number" required class="w-full p-4 rounded-xl border border-slate-200 outline-none focus:border-primary">
+                        </div>
+                        <select id="service" class="w-full p-4 rounded-xl border border-slate-200 outline-none focus:border-primary">
+                            <option value="Manpower Supply">Manpower Supply</option>
+                            <option value="Housekeeping">Housekeeping</option>
+                            <option value="Labour Supply">Labour Supply</option>
+                            <option value="Computer Work">Computer Work</option>
+                        </select>
+                        <textarea id="message" rows="3" placeholder="Message..." class="w-full p-4 rounded-xl border border-slate-200 outline-none focus:border-primary"></textarea>
+                        <button type="button" onclick="sendToWhatsApp()" class="w-full bg-primary text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-800 transition shadow-lg">Submit Inquiry (WhatsApp)</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 px-6">
+        <div class="container mx-auto text-center">
+            <div class="flex items-center justify-center gap-2 mb-6">
+                <div class="bg-primary p-2 rounded-lg text-white">
+                    <i data-lucide="shield-check" class="w-5 h-5"></i>
+                </div>
+                <span class="text-lg font-extrabold uppercase">Laxman Associates</span>
+            </div>
+            <p class="text-slate-500 text-sm">© 2026 Laxman Associates. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        function openEnquiry(service) {
+            const msg = `Hello Laxman Associates, Mujhe ${service} ke baare me detail me jankari chahiye.`;
+            const url = `https://wa.me/919876543210?text=${encodeURIComponent(msg)}`;
+            window.open(url, '_blank');
+        }
+
+        function sendToWhatsApp() {
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const msg = document.getElementById('message').value;
+
+            if(!name || !phone) {
+                alert("Please Naam aur Number bharein!");
+                return;
+            }
+
+            const finalMsg = `*New Inquiry - Laxman Associates*\nName: ${name}\nPhone: ${phone}\nService: ${service}\nMessage: ${msg}`;
+            const url = `https://wa.me/919876543210?text=${encodeURIComponent(finalMsg)}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
